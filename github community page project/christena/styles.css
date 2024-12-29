@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #111;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.video-section {
+    position: relative;
+    height: 700px; 
+    overflow: hidden;
+    padding: 0;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .video-section {
+        height: 800px;
+        width: 600px; 
+    }
+
+    .bg-video {
+        min-width: auto;
+        min-height: 100%; 
+    }
+}
+
+.video-section h2, .video-section p {
+    position: relative;
+    z-index: 1; 
+    color: white;
+}
+
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+h3{
+    color: #000000;
+}
+.schedule-grid p{
+    color: black;
+}
+.team-grid p{
+    color: black;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;  
+    padding: 60px;
+    background-color: #000000; 
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 100px; 
+}
+
+.about-text {
+    margin-left: 40px;
+    width: 50%;
+    color: #ffffff;
+    text-align: left;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    align-items: right;
+    object-fit: cover;  
+}
+
+.schedule-grid, .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.schedule-item, .team-card {
+    background-color: #ffffffeb;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.schedule-item:hover, .team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img, .schedule-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.contact-form-section {
+    background-color: #000000;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #5f5c5c;
+}
+
+.contact-section {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    
+    padding: 10px;
+    text-align: center;
+    
+}
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons li {
+    margin: 0 15px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #0366d6;
+  }
+  
+  footer p {
+    margin-top: 20px;
+  }

@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  line-height: 1.6;
+  color: #f2f2f2; /* Light text color for dark theme */
+  background-color: #121212; /* Dark background for the theme */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1e1e1e; /* Dark navigation bar */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Lighter shadow for dark theme */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f2f2f2; /* Light color for text */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f00b00; /* Bright green hover color */
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #f2f2f2;
+  transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("assets/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #450300; /* Bright green CTA button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f00b00; /* Darker green on hover */
+}
+
+/* Section Styles */
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #f2f2f2; /* Light color for section headings */
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px;
+}
+
+.feature i {
+  font-size: 2.5rem;
+  color: #f00b00; /* Bright green for icons */
+  margin-bottom: 1rem;
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: #1e1e1e; /* Dark background for cards */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+}
+
+.event-date {
+  color: #f00b00; /* Green date color */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Members Grid */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.member-card {
+  background: #1e1e1e; /* Dark background for member cards */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.member-info {
+  padding: 20px;
+}
+
+.member-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #f2f2f2;
+}
+
+.member-role {
+  color: #f00b00; /* Green for role */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.member-bio {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #bbb; /* Lighter bio text */
+}
+
+.member-social a {
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.member-social a:hover {
+  color: #f00b00; /* Green on hover */
+}
+
+/* Resources Grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.resource-card {
+  text-align: center;
+  padding: 30px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+}
+
+.resource-card i {
+  font-size: 2rem;
+  color: #f00b00;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-link {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #f00b00; /* Green hover for social links */
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e1e; /* Dark footer */
+  color: #bbb; /* Light footer text */
+  text-align: center;
+  padding: 20px 0;
+}
+#main-text {
+  font-size: 28px;
+}
+
+#about-us {
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #1e1e1e;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+}
